@@ -47,7 +47,6 @@ class UserRepository(BaseRepository):
             email=u.email,
             hashed_password=hash_password(u.password),
             is_company=u.is_company,
-            created_at=datetime.datetime.utcnow(),
             updated_at=datetime.datatime.utcnow(),
         )
 
@@ -61,7 +60,7 @@ class UserRepository(BaseRepository):
 
     
     async def get_by_email(self, email: str) -> User:
-        query = users.select().where(users.c.email==email).first()
+        query = users.select().where(users.c.email==email)
         user = await self.database.fetch_one(query)
         if user is None:
             return None
