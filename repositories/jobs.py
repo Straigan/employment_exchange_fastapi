@@ -1,9 +1,11 @@
 
-from typing import List, Optional
 import datetime
+from typing import List, Optional
+
 from models.jobs import Job, JobIn
 from db.jobs import jobs
 from .base import BaseRepository
+
 
 class JobRepository(BaseRepository):
 

@@ -1,10 +1,10 @@
 from typing import List
-from db.users import users
-from .base import BaseRepository
 import datetime
 
 from models.user import User, UserIn
 from core.security import hash_password
+from db.users import users
+from .base import BaseRepository
 
 
 class UserRepository(BaseRepository):

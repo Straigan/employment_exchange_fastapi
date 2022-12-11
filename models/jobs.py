@@ -1,6 +1,7 @@
 import datetime
 from pydantic import BaseModel
 
+
 class BaseJob(BaseModel):
     title: str
     description: str

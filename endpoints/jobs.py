@@ -1,9 +1,11 @@
 from typing import List
+
 from models.jobs import Job, JobIn
 from models.user import User
 from repositories.jobs import JobRepository
 from fastapi import APIRouter, Depends, HTTPException, status
 from .depends import get_job_repository, get_current_user
+
 
 router = APIRouter()
 

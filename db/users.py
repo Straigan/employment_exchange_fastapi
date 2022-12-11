@@ -1,6 +1,7 @@
 import sqlalchemy
-from .base import metadata
 import datetime
+
+from .base import metadata
 
 
 users = sqlalchemy.Table(

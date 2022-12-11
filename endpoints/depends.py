@@ -1,4 +1,5 @@
 from fastapi import Depends, HTTPException, status
+
 from repositories.users import UserRepository
 from repositories.jobs import JobRepository
 from db.base import database
